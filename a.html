@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<title>
+  Unutma
+</title>
+    <style>
+      body{
+        animation: koyu 2s linear 1;
+        font-family: sans-serif;
+        background: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @keyframes koyu{
+        0%{background-color: white;}
+        100%{background-color: black;}
+      }
+      p{
+        display: none;
+        font-size: 5vw;
+      }
+    </style>
+  </head>
+  <body>
+<p id="p1">M</p>
+    <p id="p1">R</p>
+    <script>
+      let x = 1;
+      setTimeot(function(){
+        setInterval(function(){
+        document.getElementById("p" + x).style.display="block";
+          document.getElementById("p" + (x-1)).style.display="none";
+          x=x+1;
+      },500)
+      }, 1500)
+    </script>
+  </body>
+</html>
