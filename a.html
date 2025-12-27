@@ -31,6 +31,7 @@
     <p id="p2">R</p>
     <script>
       let x = 1;
+      try{
       setTimeot(function(){
         setInterval(function(){
         document.getElementById("p" + x).style.display="block";
@@ -38,6 +39,7 @@
           x=x+1;
       },500)
       }, 1500)
+      } catch(e){ alert(e); }
     </script>
   </body>
 </html>
